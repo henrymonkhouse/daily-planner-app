@@ -1,0 +1,42 @@
+
+.skill-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the top-left */
+  justify-content: center; /* Center the circle vertically */
+  height: 100%; /* Ensure the card takes the full height */
+  position: relative; /* Allow precise positioning */
+  padding: 20px; /* Add padding inside the card */
+  box-sizing: border-box;
+}
+
+.skill-tracker h3 {
+  margin: 0;
+  margin-bottom: 20px; /* Add spacing below the title */
+  font-weight: 500; /* Ensure consistent font weight */
+  text-align: left; /* Ensure the text is left-aligned */
+}
+
+.skill-circle-container {
+  width: 100%; /* Take up the full width of the card */
+  display: flex;
+  justify-content: center; /* Center the circle horizontally */
+  align-items: center;
+  height: 100%; /* Ensure vertical alignment within the container */
+}
+
+.skill-circle {
+  width: 120px; /* Circle size */
+  height: 120px;
+  border: 2px solid #333; /* Border for unfilled state */
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-sizing: border-box; /* Include border in size calculations */
+}
+
+.skill-circle.filled {
+  background-color: #4caf50; /* Green when filled */
+  border: 2px solid #4caf50; /* Match the background color to "hide" the border */
+}

@@ -1,0 +1,39 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-gap: 20px; /* Spacing between the cards */
+  margin: 40px auto; /* Center the grid and add top margin */
+  padding-left: 220px; /* Offset the grid to account for the sidebar width */
+  box-sizing: border-box; /* Prevent padding from affecting width */
+  grid-auto-rows: 1fr; /* Ensures rows are all the same height */
+}
+
+.dashboard-card {
+  background-color: white; /* White card background */
+  border: 1px solid #ddd; /* Optional soft border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px; /* Uniform height for all cards */
+  min-height: 200px; /* Minimum height to match the largest content */
+  box-sizing: border-box; /* Include padding and border in size calculation */
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    padding-left: 0; /* Remove the sidebar offset on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    padding-left: 0; /* Remove the sidebar offset on smaller screens */
+  }
+}

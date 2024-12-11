@@ -1,0 +1,31 @@
+.sidebar {
+  position: fixed; /* Sidebar stays fixed on the left */
+  top: 120px; /* Matches the navbar height */
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  height: calc(100vh - 120px); /* Sidebar takes up full height below navbar */
+  background-color: white; /* White background */
+  box-shadow: none; /* Remove any border or shadow */
+  padding-top: 50px; /* Push menu items further down */
+  z-index: 99; /* Ensure it's below the navbar */
+  border: none; /* Remove any default borders */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333; /* Adjust text color */
+  margin: 20px 0; /* Add spacing between menu items */
+  text-align: center; /* Center-align text */
+}
+
+.sidebar li:hover {
+  cursor: pointer; /* Change cursor on hover */
+  color: #000; /* Slightly darker text on hover */
+}

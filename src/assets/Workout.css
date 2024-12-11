@@ -1,0 +1,64 @@
+/* Slider container */
+.slider-container {
+  width: 100%;
+  margin-bottom: 30px; /* Increased margin to push it down */
+  margin-top: 10px; /* Optional: Adds some spacing from the top */
+}
+
+/* Slider styles */
+.slider-container input[type="range"] {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #ef1a1a, #4caf50);
+  border-radius: 10px;
+  outline: none;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: #e3e3e3;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: transform 0.3s ease;
+}
+
+.slider-container input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+.slider-container input[type="range"]:focus {
+  background: linear-gradient(to right, #ef1a1a, #4caf50);
+}
+
+/* Rating below slider */
+.slider-rating {
+  text-align: center;
+  margin-top: 25px; /* Adds more spacing below the slider */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Workout circle */
+.workout-circle {
+  align-self: center;
+  height: 110px;
+  width: 110px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.workout-circle.filled {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+}

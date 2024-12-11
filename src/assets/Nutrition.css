@@ -1,0 +1,41 @@
+.nutrition-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Spacing between circles */
+  justify-items: center; /* Center align items in the grid */
+  align-items: center; /* Vertically align items */
+  width: 100%;
+  padding: 35px 10px; /* Add extra padding on top and bottom */
+  box-sizing: border-box; /* Ensure padding doesn't affect the layout */
+}
+
+.nutrition-item {
+  display: flex;
+  flex-direction: column; /* Stack circle and label vertically */
+  align-items: center; /* Center align circle and label */
+  text-align: center;
+}
+
+.nutrition-circle {
+  width: 50px; /* Circle size */
+  height: 50px; /* Circle size */
+  border: 2px solid black; /* Black border */
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 5px; /* Space between circle and label */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.nutrition-circle.filled {
+  background-color: #4caf50; /* Green background when selected */
+  border-color: #4caf50; /* Green border */
+}
+
+.nutrition-label {
+  font-size: 14px;
+  color: #333;
+}

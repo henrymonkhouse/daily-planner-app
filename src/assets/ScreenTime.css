@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Title aligned to top-left */
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 100%; /* Ensure consistent height */
+  position: relative;
+}
+
+.card h3 {
+  margin: 0; /* Remove extra margin */
+  font-weight: 400; /* Non-bold */
+  font-size: 20px;
+  text-align: left;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  left: 20px; /* Push title slightly right */
+}
+
+.screen-time-inputs {
+  display: flex;
+  justify-content: center; /* Center inputs horizontally */
+  align-items: center; /* Center inputs vertically */
+  gap: 40px; /* Add spacing between Hrs and Mins */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screen-time-inputs label {
+  display: flex;
+  flex-direction: row; /* Input to the left of the label */
+  align-items: center; /* Center align input and label */
+  font-size: 20px; /* Label font size */
+  color: #666; /* Subtle color for labels */
+  gap: 10px; /* Space between input and label */
+}
+
+.screen-time-inputs input {
+  border: none; /* Remove borders */
+  background: none; /* Transparent background */
+  font-size: 30px; /* Larger font for input text */
+  color: #333; /* Match other text colors */
+  text-align: center; /* Center text */
+  width: 60px; /* Fixed width */
+  outline: none; /* Remove focus outline */
+}
+
+.screen-time-inputs input:focus {
+  outline: none; /* Ensure no focus outline */
+}

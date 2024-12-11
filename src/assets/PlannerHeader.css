@@ -1,0 +1,18 @@
+.planner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.planner-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.planner-button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}

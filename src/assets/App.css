@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+}
+
+.app {
+  height: 100vh;
+  background: white; /* Everything is WHITE */
+}
+
+.content {
+  margin-top: 120px; /* Push content below navbar */
+  padding: 20px; /* Add padding around the content */
+  box-sizing: border-box; /* Prevent padding from affecting width */
+}

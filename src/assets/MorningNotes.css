@@ -1,0 +1,47 @@
+.morning-notes {
+  margin-bottom: 20px;
+}
+
+.morning-notes h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.morning-notes textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.morning-notes textarea.error {
+  border-color: red;
+}
+
+.morning-notes .error-message {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 10px;
+}
+
+.morning-notes .save-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.morning-notes .save-button:hover {
+  background-color: #45a049;
+}
