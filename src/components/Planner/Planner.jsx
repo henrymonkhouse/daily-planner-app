@@ -113,6 +113,7 @@ const Planner = () => {
       <HourlySchedule
         schedule={schedule}
         onScheduleChange={handleScheduleChange}
+        onSubmit={savePlannerData}
       />
       <MorningNotes notes={notes} setNotes={setNotes} onSave={handleSaveNote} />
       <DailyTasks tasks={tasks} onTaskToggle={handleTaskToggle} />
